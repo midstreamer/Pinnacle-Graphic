@@ -1,0 +1,183 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Connected Data</title>
+	
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		.style_s span{color:#18b74c}
+	</style>
+</head>
+
+<html>
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;CONNECTED DATA&rdquo; Documentation by &ldquo;C. Alessi&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;CONNECTED DATA&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 12/4/2020<br>
+					By: Alessi<br>
+					
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+		</ol>
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>Layout Responsive all divided into selection part of page parallax.<br />
+       </p>
+		
+		<hr>
+
+		
+		<h3 id="javascript"><strong>JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+        <p>All effect it s in easy javascript</p>
+
+		<p>Structure Javascript effect background example File parallaxsoon3.js</p>
+         <p>
+         This script use for modify and create the ball</p><br />
+         <pre>
+            var WIDTH;
+            var HEIGHT;
+            var canvas;
+            var con;
+            var g;
+            var pxs = new Array();
+            var numberObject = 8000;
+            var numberBall = 100; //Number ball
+            var pulsion = 16; //Pulsion up down
+            var speedX = 5;
+            var speedY = 2;
+            var colorRect = 'rgba(255,255,255,'; //Color Ball
+            var opacityRect = 0.2;  //Opacity Ball
+            var rint = 30;
+            var radius = 68;  //Diameter Ball
+
+            //Part code for management varible into different brouser
+
+            function BrowserDetection() {
+
+                if (/Firefox[\/\s](\d+\.\d+)/.test(navigator.userAgent)) {
+        
+                    var ffversion = new Number(RegExp.$1);
+                     rint = 10;
+                     pulsion = 3;
+                }
+
+                else if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)) {
+
+                    var ieversion = new Number(RegExp.$1);
+                    rint = 50;
+                    pulsion = 16;
+                }
+
+                else if (/Chrome[\/\s](\d+\.\d+)/.test(navigator.userAgent)) {
+                    var chromeversion = new Number(RegExp.$1);
+                     rint = 50;
+                     pulsion = 16;
+
+                }
+                else if (/Opera[\/\s](\d+\.\d+)/.test(navigator.userAgent)) {
+
+                    var oprversion = new Number(RegExp.$1)
+                    rint = 50;
+                    pulsion = 16;
+                }
+                else if (/Safari[\/\s](\d+\.\d+)/.test(navigator.userAgent)) {
+                    var safariversion = new Number(RegExp.$1);
+                    rint = 50;
+                    pulsion = 16;
+
+                }
+
+                //Importand part for reduce the number of bubbles for ipad and iphone
+
+                WIDTH = window.innerWidth;
+    
+                if (WIDTH < 1024) {
+                    numberObject = 19000;
+                    numberBall = 10;
+                    pulsion = 2;
+                    rint = 10;
+                }
+
+            }
+
+          </pre><br />
+          
+          
+          <p>Background Paint</p>
+
+          <p>Background Paint use the file marblue.js</p>
+         <pre>
+         $(function () {
+                    var i, j, canvas, context, points = [], width, height, numLines = 10;
+
+                    canvas = $("#canvas")[0];
+                    context = canvas.getContext("2d");
+
+                    var $canvasDiv = $('#slide9');     //This use only for parallx dimension
+                    width = $canvasDiv.innerWidth();
+                    height = $canvasDiv.innerHeight();
+
+                    context.strokeStyle = '#c9c9c9';  //Color line
+                    context.lineWidth = 0.1; //Dimention line
+
+                    for (i = 0; i < 4 * numLines; i += 1) {
+                        points.push({ x: Math.random() * width, y: Math.random() * height, vx: Math.random() * 4 - 2, vy: Math.random() * 4 - 2 });
+                    }
+
+                    var varCounter = 0;
+                    setInterval(function () {
+                        if (varCounter <= 15000) {    //Whene you whant stop the animation
+                            for (j = 0; j < numLines; j += 1) {
+                                context.beginPath();
+                                context.moveTo(points[j * 4].x, points[j * 4].y);
+                                context.bezierCurveTo(points[j * 4 + 1].x, points[j * 4 + 1].y,
+                                                  points[j * 4 + 2].x, points[j * 4 + 2].y,
+                                                  points[j * 4 + 3].x, points[j * 4 + 3].y);
+                                context.stroke();
+                            }
+                            for (i = 0; i < points.length; i += 1) {
+                                points[i].y += points[i].vx;
+                                points[i].x += points[i].vy;
+
+                                varCounter++;
+                            }
+                        } else { clearInterval(setInterval); }
+                    }, 1000 / 24);
+
+
+                });
+
+          </pre>
+         
+		<hr>
+		
+		<p class="append-bottom alt large"><strong>C. Alessi</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

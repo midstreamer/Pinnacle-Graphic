@@ -1,0 +1,23 @@
+﻿
+ /********* Canvas*************/
+ 
+ #canvas{position:fixed;
+      background: #5dc1ad;}
+  
+#titleheader
+{
+      font-family: 'Oswald', sans-serif;
+}
+
+#textcopy
+{
+      font-family: 'Open Sans', sans-serif;
+}
+.card-content
+{
+      text-align: center;
+}
+.card.large
+{
+      padding: 60px, 20px, 20px, 20px;
+}

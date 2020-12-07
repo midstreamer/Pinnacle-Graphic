@@ -1,0 +1,274 @@
+﻿/* Global */
+
+body {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 50px;
+	line-height:21px;
+	color: #7a7a7a;
+	overflow-x:hidden;
+	background:#f3f3f3;
+}
+body {
+    margin: 0;
+}
+::selection {
+	background: #ff7d04;
+	color:#fff;
+}
+::-moz-selection {
+	background: #ff7d04; /* Firefox */
+	color:#fff;
+}
+
+h2
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 64px;
+    font-weight: 200;
+    color:#000;
+    text-align:center;
+    margin-top:100px;
+    }
+h3 {
+	margin:0;
+	padding:40px 0 32px 0;
+	text-transform:uppercase;
+	text-align:center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+	font-size:32px;
+	font-style:normal;
+	line-height:36px;
+	color:#fff;
+}
+img {
+	max-width: 100%;
+}
+a:link {
+	color: #ff7d04;
+	text-decoration: none;
+}
+a:hover {
+	color:#ff7d04;
+}
+a:visited {
+	color: #ff7d04;
+	text-decoration: none;
+}
+
+canvas {
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+
+
+/* ____________________________________ Slide 2 ____________________________________ */ 
+
+#slide2 {
+	
+	padding:146px 0 129px;
+	text-align:center;
+}
+
+#slide2 p{
+	font-family: 'Dosis',sans-serif;
+    font-size: 44px;
+    font-weight: 200;
+    margin:60px 0 70px 0;
+	
+}
+
+
+/* ___________________________________ //Slide 2 ___________________________________ */ 
+
+
+
+
+
+/* ____________________________________ Slide 3 ____________________________________ */ 
+
+#slide3{
+	background:url(../images/city.png) no-repeat left top;
+	-webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+	background-size: 100% 100% !important;
+	background-position:0 0 !important;
+	background-attachment: fixed;
+   
+	width:100%;
+	text-align:center;
+}
+.padding_slide3 {padding:88px 0 75px;
+}
+
+
+
+/* ___________________________________ //Slide 3 ___________________________________ */ 
+
+
+
+
+
+/* ____________________________________ Slide 4 ____________________________________ */ 
+#slide4 {
+	background:#fff;
+	width:100%;
+	padding:86px 0 69px;
+	text-align:center;
+}
+
+#slide4 p{
+	font-family: 'Dosis',sans-serif;
+    font-size: 44px;
+    font-weight: 200;
+    margin:60px 0 70px 0;
+	
+}
+
+/* ___________________________________ //Slide 4 ___________________________________ */
+
+
+
+/* ____________________________________ Slide 5 ____________________________________ */ 
+
+#slide5 {
+	background:url(../images/city2.jpg) no-repeat left top;
+	-webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+	background-position:0 0 !important;
+	width:100%;
+	text-align:center;
+}
+.padding_slide5 {padding:88px 0 75px;
+}
+
+
+
+/* ___________________________________ //Slide 5 ___________________________________ */ 
+
+
+
+
+/* ____________________________________ Slide 6 ____________________________________ */ 
+
+#slide6 {
+	background:#fff;
+	width:100%;
+	padding:86px 0 69px;
+	text-align:center;
+}
+
+#slide6 p{
+	font-family: 'Dosis',sans-serif;
+    font-size: 44px;
+    font-weight: 200;
+    margin:60px 0 70px 0;
+	
+}
+
+/* ___________________________________ //Slide 6 ___________________________________ */ 
+
+
+
+
+/* ____________________________________ Slide 7 ____________________________________ */ 
+
+#slide7{
+	background:url(../images/slide7_bg.jpg) no-repeat left top;
+	-webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+	background-position:0 0 !important;
+	width:100%;
+	text-align:center;
+}
+.padding_slide7 {padding:88px 0 75px;
+}
+
+
+
+/* ___________________________________ //Slide 7 ___________________________________ */ 
+
+/* ____________________________________ Slide 8 ____________________________________ */ 
+
+#slide8 {
+	background:#fff;
+	width:100%;
+	padding:86px 0 69px;
+	text-align:center;
+}
+
+#slide8 p{
+	font-family: 'Dosis',sans-serif;
+    font-size: 44px;
+    font-weight: 200;
+    margin:60px 0 70px 0;
+	
+}
+
+/* ___________________________________ //Slide 8 ___________________________________ */ 
+
+
+
+
+/* ____________________________________ Slide 9 ____________________________________ */ 
+
+#slide9{
+	background:url(../images/slide7_bg.jpg) no-repeat left top;
+	-webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+	background-position:0 0 !important;
+	width:100%;
+	text-align:center;
+}
+.padding_slide9 {padding:88px 0 75px;
+}
+
+#canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ___________________________________ //Slide 9 ___________________________________ */ 
+
+/* ____________________________________ Slide 10 ____________________________________ */ 
+
+#slide10 {
+	background:#fff;
+	width:100%;
+	padding:86px 0 69px;
+	text-align:center;
+}
+
+#slide10 p{
+	font-family: 'Dosis',sans-serif;
+    font-size: 44px;
+    font-weight: 200;
+    margin:60px 0 70px 0;
+	
+}
+
+/* ___________________________________ //Slide 10 ___________________________________ */
+
+@media screen and (max-width : 479px) {	
+
+
+    .navigation li a {
+        font-size: 12px;
+        padding: 31px 10px;
+    }
+    h2{font-size:44px;}
+    #slide2 p {font-size: 34px;}
+    #slide4 p {font-size: 34px;}
+    #slide6 p {font-size: 34px;}
+}
