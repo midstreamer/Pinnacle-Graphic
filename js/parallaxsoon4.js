@@ -34,11 +34,11 @@ function draw() {
   for (var i = 0, x = stars.length; i < x; i++) {
     var s = stars[i];
   
-    ctx.fillStyle = "#fff";
+    ctx.fillStyle = "#1e5455";
     ctx.beginPath();
     ctx.arc(s.x, s.y, s.radius, 0, 2 * Math.PI);
     ctx.fill();
-    ctx.fillStyle = 'black';
+    ctx.fillStyle = '#2d6f6b';
     ctx.stroke();
   }
   
@@ -56,7 +56,7 @@ function draw() {
     }
   }
   ctx.lineWidth = 0.5;
-  ctx.strokeStyle = 'white';
+  ctx.strokeStyle = '#1e5455';
   ctx.stroke();
 }
 

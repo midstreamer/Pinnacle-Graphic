@@ -22,11 +22,27 @@
 
   <body>
     <canvas id="canvas"></canvas>
+    <div class="row">
+
+
+    </div>
+          
+    <!-- <div class="row"> -->
+      <div class="column2">
+        <div class="card opacity">
+          <h2>MAKING THE WORLD RELIABLE, ONE CUSTOMER AT A TIME.</h2>
+          <p class="subheader">We are the largest reliability analytics firm in the world, with Reliability Data Analysts, Project Management Professionals,
+            Subject Matter Experts, and a Ventures business unit focused on accelerating reliability every day.</p>
+        </div>
+        
+     
+      </div>
+    <!-- </div> -->
 
     <div class="row">
       <div class="column">
         <div class="card">
-          <h2 class="first_content">1,020,113,151</h2>
+          <h2>1,020,113,151</h2>
           <h3 class="second_content">reliablity data points assessed</h3>
         </div>
       </div>
@@ -64,6 +80,12 @@
         width: 33.3%;
         padding: 0 10px;
       }
+
+      .column2 {
+        text-align: left;
+        width: 100%;
+        padding: 0 10px;
+      }
       
       /* Remove extra left and right margins, due to padding */
       .row {margin: 0 -5px;}
@@ -86,25 +108,19 @@
       
       /* Style the counter cards */
       .card {
-        top: 300px;
-        box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
-        padding: 16px;
+        top: 60px;
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+        
+        padding: 20px;
         text-align: center;
+        align-content: center;
         font-family: 'Oswald', sans-serif;
-        color: #032731;
-        background-color: #white;
+        /* color: #032731; */
+        color: white;
+        background: transparent;
         height: 275px;
         border-radius: 5px;
       }
-      /* .first_content
-      {
-        text-align:center;
-	      font-family: 'Oswald', sans-serif;
-	      font-weight:300;
-	      font-size:32px;
-	      font-style:normal;
-	      line-height:36px;
-      } */
       .second_content
       {
         text-align:center;
@@ -114,8 +130,34 @@
 	      font-style:normal;
 	      line-height:36px;
       }
-
-      
+      #title-card
+      {
+        /* top: 300px; */
+        box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+        padding: 30px, 0, 20px;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        color: #032731;
+        background-color: #white;
+        height: 275px;
+        border-radius: 5px;
+      }
+      .subheader
+      {
+        text-align:center;
+	      font-family: 'Oswald', sans-serif;
+	      font-weight:300;
+	      font-size:20px;
+	      font-style:normal;
+	      line-height:36px; 
+      }
+      .opacity
+      {
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+        /* box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2); */
+        height: 220px;
+        padding: 10px;
+      }
       </style>
       
     
@@ -124,6 +166,6 @@
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
 
   <script src="js/parallaxsoon4.js" type="text/javascript"></script>
-	
+  
   </body>
 </html>
